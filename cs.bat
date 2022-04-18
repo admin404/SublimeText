@@ -1,9 +1,11 @@
 @echo off
 
 set session_file1=%CD%\Data\Local\Session.sublime_session
-set session_file2=%CD%\Data\Local\Auto Save Session.sublime_session
-rm -rf %session_file1%
-rm -rf %session_file2%
+set session_file2="%CD%\Data\Local\Auto Save Session.sublime_session"
+del /f %session_file1%
+del /f %session_file2%
+
+pause>nul
 
 set current_date=%date%
 set current_time=%time%
