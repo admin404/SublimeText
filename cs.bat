@@ -12,4 +12,3 @@ set comment=%date%_%time%
 git add .
 git commit -m "%comment%"
 git push
-pause>nul
