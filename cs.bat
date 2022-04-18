@@ -5,8 +5,6 @@ set session_file2="%CD%\Data\Local\Auto Save Session.sublime_session"
 del /f %session_file1%
 del /f %session_file2%
 
-pause>nul
-
 set current_date=%date%
 set current_time=%time%
 set comment=%date%_%time%
@@ -14,3 +12,4 @@ set comment=%date%_%time%
 git add .
 git commit -m "%comment%"
 git push
+pause>nul
